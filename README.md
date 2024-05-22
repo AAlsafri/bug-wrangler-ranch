@@ -105,11 +105,11 @@ Your journey will take you through the wildness of the American Midwest and acro
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+   > The value of `drovers` variable is an empty Array until it gets defined later in the code as an Array of objects.
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > `drover` is an iterator and `drovers` is an Array of drove objects.
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+   > [Your public Loom URL here](https://www.loom.com/share/5244f6e4ada443da847e2f7445efa931)
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
@@ -117,11 +117,13 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+   > The for loop starts by declaring a variable `forestNumber` and assigning it the initial value of 0. Then it takes the variable and compares it to the values of the property `forests` of the object `areas` and as long as the variable is less than the value of the property, the operation adds the string `forest` to the `journey`[] and then increment until the variable is not less than the value of the property `forests` of the `areas` object.
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > The `database` variable is an object that contains two properties 1-`cattleTypes` & 2-`drovers` with each property holding an array of objects.
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+   >`(herdSize)` is defining a parameter for the function. It points to the fact that the function expects a parameter to be passed into it called `herdSize`.
+
+   The value of `herdSize` isn't defined when the function is called. It gets the value from arguments passed to the function when called.
 
 
 ## Final Step
